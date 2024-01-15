@@ -63,6 +63,45 @@ ul {
   background-color: white;
 }
 
+#side-drawer {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(29, 26, 27);
+}
+
+#side-drawer header {
+  height: 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 0 5%;
+}
+
+#side-drawer:target {
+  display: block;
+}
+
+#side-drawer ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0;
+  padding: 4rem 1rem;
+}
+
+#side-drawer li {
+  margin: 1rem 0;
+}
+
+#side-drawer a {
+  font-size: 2rem;
+  color: rgb(253, 239, 213);
+}
+
 main h1 {
   text-align: center;
   font-size: 3rem;
@@ -97,6 +136,10 @@ main h1 {
 .food-item-content {
   padding: 1rem;
   text-align: center;
+}
+
+.food-item h2 {
+  margin-bottom: 1rem;
 }
 
 .btn {
